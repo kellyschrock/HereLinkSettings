@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">HereLink Settings</string>
+
+    <string name="txt_d2d_settings">D2D Settings</string>
+    <string name="uplink_freq_hopping">Uplink Frequency hopping</string>
+    <string name="downlink_freq_hopping">Downlink Frequeny hopping</string>
+    <string name="downlink_anti_interference">Downlink frequency anti-interference tuning</string>
+    <string name="radio_power">Radio power</string>
+    <string name="ctrl_signal_strength">Controller signal strength:</string>
+    <string name="vehicle_signal_strength">Vehicle signal strength:</string>
+    <string name="vehicle_signal_state">Vehicle signal state:</string>
+    <string name="vehicle_qos">Vehicle QoS:</string>
+    <string name="dl_freq_point">Downlink frequency point:</string>
+    <string name="iface_dev_setting">Interface device setting:</string>
+    <string name="dl_bandwidth">Downlink bandwidth:</string>
+    <string name="ul_bandwidth">Uplink bandwidth:</string>
+    <string name="cmd_type">Command Type:</string>
+    <string name="hint_cmd_type">Command Type</string>
+    <string name="cmd_value">Command Value:</string>
+    <string name="hint_cmd_value">Command Value</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_request_freq_negotiation">Freq Negotiation</string>
+</resources>

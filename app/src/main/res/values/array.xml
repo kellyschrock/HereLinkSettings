@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    <string-array name="entries_d2d_config_iface_dev">
+        <item>@string/str_d2d_iface_40</item>
+        <item>@string/str_d2d_iface_41</item>
+    </string-array>
+    <string-array name="entryvalues_d2d_config_iface_dev">
+        <item>@string/str_d2d_iface_40</item>
+        <item>@string/str_d2d_iface_41</item>
+    </string-array>
+    <string-array name="entries_d2d_config_bandwidth">
+        <item>@string/str_1_4_MHz</item>
+        <item>@string/str_3_MHz</item>
+        <item>@string/str_5_MHz</item>
+        <item>@string/str_10_MHz</item>
+        <item>@string/str_15_MHz</item>
+        <item>@string/str_20_MHz</item>
+    </string-array>
+    <string-array name="entryvalues_d2d_config_bandwidth">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+</resources>

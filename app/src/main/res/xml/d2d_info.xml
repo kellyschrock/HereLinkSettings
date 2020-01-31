@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="key_testassistant_d2d_info">
+
+    <CheckBoxPreference
+        android:key="d2d_config_ul_freq_hop_ctrl"
+        android:title="@string/str_d2d_config_ul_freq_hop"
+        android:summaryOn="@string/str_d2d_freq_hopping_enabled"
+        android:summaryOff="@string/str_d2d_freq_hopping_disabled">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="d2d_config_dl_freq_hop_ctrl"
+        android:title="@string/str_d2d_config_dl_freq_hop"
+        android:summaryOn="@string/str_d2d_freq_hopping_enabled"
+        android:summaryOff="@string/str_d2d_freq_hopping_disabled">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="d2d_config_radio_power_ctrl"
+        android:title="@string/str_d2d_config_radio_power"
+        android:summaryOn="@string/str_d2d_radio_power_disabled"
+        android:summaryOff="@string/str_d2d_radio_power_enabled">
+    </CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:key="d2d_config_freq_updt_ctrl"
+        android:title="@string/str_d2d_config_freq_updt_ctrl"
+        android:summaryOn="@string/str_d2d_freq_updt_ctrl_enabled"
+        android:summaryOff="@string/str_d2d_freq_updt_ctrl_disabled">
+    </CheckBoxPreference>
+
+    <Preference android:key="controller_signal_strength"
+        android:title="@string/str_controller_signal_strength"
+        android:summary="@string/str_signal_strength_unknown" />
+
+    <Preference android:key="plane_signal_strength"
+        android:title="@string/str_plane_signal_strength"
+        android:summary="@string/str_signal_strength_unknown" />
+
+    <Preference android:key="plane_service_status"
+        android:title="@string/str_plane_service_state"
+        android:summary="@string/str_d2d_disconnected" />
+
+    <Preference android:key="plane_qos"
+        android:title="@string/str_plane_qos"
+        android:summary="@string/str_plane_qos_unknown" />
+
+    <Preference
+        android:defaultValue="47400"
+        android:maxLength="5"
+        android:key="d2d_config_dl_freqency"
+        android:summary="@string/str_d2d_config_frequency_example"
+        android:title="@string/d2d_config_command_dl_frequency">
+    </Preference>
+
+    <ListPreference
+        android:key="d2d_config_iface_dev"
+        android:title="@string/str_d2d_config_iface_dev"
+        android:dialogTitle="@string/str_d2d_config_iface_dev"
+        android:entries="@array/entries_d2d_config_iface_dev"
+        android:entryValues="@array/entryvalues_d2d_config_iface_dev">
+    </ListPreference>
+
+    <ListPreference
+        android:key="d2d_config_dl_bw"
+        android:title="@string/str_d2d_config_dl_bandwidth"
+        android:dialogTitle="@string/str_d2d_config_dl_bandwidth"
+        android:entries="@array/entries_d2d_config_bandwidth"
+        android:entryValues="@array/entryvalues_d2d_config_bandwidth">
+    </ListPreference>
+
+    <ListPreference
+        android:key="d2d_config_ul_bw"
+        android:title="@string/str_d2d_config_ul_bandwidth"
+        android:dialogTitle="@string/str_d2d_config_ul_bandwidth"
+        android:entries="@array/entries_d2d_config_bandwidth"
+        android:entryValues="@array/entryvalues_d2d_config_bandwidth">
+    </ListPreference>
+
+
+   <EditTextPreference
+        android:defaultValue="0"
+        android:maxLength="8"
+        android:key="d2d_config_command_id"
+        android:summary="@string/str_d2d_config_command_id_example"
+        android:title="@string/d2d_config_command_id">
+    </EditTextPreference>
+
+   <EditTextPreference
+        android:defaultValue="0"
+        android:maxLength="8"
+        android:key="d2d_config_command_parameter"
+        android:summary="@string/str_d2d_config_command_parameter_example"
+        android:title="@string/d2d_config_command_parameter">
+    </EditTextPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".D2DSettingsActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+        <LinearLayout style="@style/Layout.Horizontal">
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/txt_d2d_settings"
+                style="@style/Text.Title"
+                />
+
+            <Button
+                android:id="@+id/btn_request_negotiation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_request_freq_negotiation"
+                style="@style/Button.Naked"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:background="@color/muted_white"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_uplink_freq_hopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/uplink_freq_hopping"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_downlink_freq_hopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/downlink_anti_interference"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_radio_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_power"
+            />
+
+        <CheckBox
+            android:id="@+id/chk_auto_freq_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_d2d_config_freq_updt_ctrl"
+            />
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ctrl_signal_strength"
+                style="@style/Text.SettingsPrompt"
+                />
+            <TextView
+                android:id="@+id/txt_controller_signal_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.SettingsPrompt"
+                android:text="@string/vehicle_signal_strength"
+                />
+            <TextView
+                android:id="@+id/txt_vehicle_signal_strength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.SettingsPrompt"
+                android:text="@string/vehicle_signal_state"
+                />
+            <TextView
+                android:id="@+id/txt_vehicle_signal_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.SettingsPrompt"
+                android:text="@string/vehicle_qos"
+                />
+            <TextView
+                android:id="@+id/txt_vehicle_qos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Text.SettingsPrompt"
+                android:text="@string/dl_freq_point"
+                />
+            <TextView
+                android:id="@+id/txt_downlink_freq_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/iface_dev_setting"
+                style="@style/Text.SettingsPrompt"
+                />
+            <Spinner
+                android:id="@+id/spin_d2d_iface_dev_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/entries_d2d_config_iface_dev"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dl_bandwidth"
+                style="@style/Text.SettingsPrompt"
+                />
+            <Spinner
+                android:id="@+id/spin_dl_bandwidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/entries_d2d_config_bandwidth"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ul_bandwidth"
+                style="@style/Text.SettingsPrompt"
+                />
+            <Spinner
+                android:id="@+id/spin_ul_bandwidth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/entries_d2d_config_bandwidth"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cmd_type"
+                style="@style/Text.SettingsPrompt"
+                />
+
+            <EditText
+                android:id="@+id/edit_command_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cmd_type"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"
+                android:minWidth="90dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout style="@style/Layout.Horizontal.PrefLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cmd_value"
+                style="@style/Text.SettingsPrompt"
+                />
+
+            <EditText
+                android:id="@+id/edit_command_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_cmd_value"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"
+                android:minWidth="90dp"
+                />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Space
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_save"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shade_dark"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_medium"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_medium"
+            tools:text="Hey stupid"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

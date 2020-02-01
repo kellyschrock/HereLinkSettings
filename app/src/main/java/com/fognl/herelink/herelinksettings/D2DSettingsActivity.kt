@@ -8,6 +8,7 @@ import android.os.*
 import android.provider.Settings
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -551,6 +552,9 @@ class D2DSettingsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+
         bindToD2DService()
         updateD2dIfaceDev()
         updateD2dBandwidth()

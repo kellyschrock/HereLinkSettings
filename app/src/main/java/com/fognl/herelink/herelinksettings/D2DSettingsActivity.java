@@ -33,7 +33,7 @@ import com.fognl.herelink.herelinksettings.fakes.SystemProperties;
 import java.util.Arrays;
 import java.util.List;
 
-public class D2DSettingsActivityJava extends AppCompatActivity {
+public class D2DSettingsActivity extends AppCompatActivity {
 
     private static final String TAG = D2DSettingsActivity.class.getSimpleName();
 
@@ -140,7 +140,7 @@ public class D2DSettingsActivityJava extends AppCompatActivity {
                     hideProgress();
                     errorCode = msg.getData().getInt(D2D_CMD_RESULT_CODE);
                     if (errorCode != 0) {
-                        Toast.makeText(D2DSettingsActivityJava.this,
+                        Toast.makeText(D2DSettingsActivity.this,
                                 getString(R.string.d2d_freq_negotiation_fail),
                                 Toast.LENGTH_SHORT).show();
                     }
@@ -177,9 +177,9 @@ public class D2DSettingsActivityJava extends AppCompatActivity {
                 case EVENT_SEND_D2D_CTRL_CMD_DONE:
                     errorCode = msg.getData().getInt(D2D_CMD_RESULT_CODE);
                     if (0 == errorCode) {
-                        Toast.makeText(D2DSettingsActivityJava.this, getString(R.string.str_prompt_reboot_device), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(D2DSettingsActivity.this, getString(R.string.str_prompt_reboot_device), Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(D2DSettingsActivityJava.this, getString(R.string.d2d_config_command_err), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(D2DSettingsActivity.this, getString(R.string.d2d_config_command_err), Toast.LENGTH_SHORT).show();
                     }
                     break;
                 case EVENT_QUERY_DL_FREQUENCY_POINT:
@@ -213,11 +213,11 @@ public class D2DSettingsActivityJava extends AppCompatActivity {
                     hideProgress();
                     errorCode = msg.getData().getInt(D2D_CMD_RESULT_CODE);
                     if (0 == errorCode) {
-                        Toast.makeText(D2DSettingsActivityJava.this,
+                        Toast.makeText(D2DSettingsActivity.this,
                                 getString(R.string.d2d_freq_hopping_ctrl_success),
                                 Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(D2DSettingsActivityJava.this,
+                        Toast.makeText(D2DSettingsActivity.this,
                                 getString(R.string.d2d_freq_hopping_ctrl_fail),
                                 Toast.LENGTH_SHORT).show();
                     }
@@ -269,11 +269,11 @@ public class D2DSettingsActivityJava extends AppCompatActivity {
                 case EVENT_CONFIG_D2D_BW_DONE:
                     errorCode = msg.getData().getInt(D2D_CMD_RESULT_CODE);
                     if (0 == errorCode) {
-                        Toast.makeText(D2DSettingsActivityJava.this,
+                        Toast.makeText(D2DSettingsActivity.this,
                                 getString(R.string.d2d_bw_config_success),
                                 Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(D2DSettingsActivityJava.this,
+                        Toast.makeText(D2DSettingsActivity.this,
                                 getString(R.string.d2d_bw_config_fail),
                                 Toast.LENGTH_SHORT).show();
                     }

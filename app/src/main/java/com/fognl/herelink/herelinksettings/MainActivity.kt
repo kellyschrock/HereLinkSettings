@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onNewD2d() {
-        startActivity(Intent(this, D2DSettingsActivity::class.java))
+        startActivity(Intent(this, D2DSettingsActivityJava::class.java))
     }
 }

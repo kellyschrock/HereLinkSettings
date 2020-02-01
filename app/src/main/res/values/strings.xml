@@ -20,4 +20,7 @@
     <string name="hint_cmd_value">Command Value</string>
     <string name="btn_save">Save</string>
     <string name="btn_request_freq_negotiation">Freq Negotiation</string>
+    <string name="status_req_freq_negotiation">Requesting frequency negotiation...</string>
+    <string name="status_freq_hop_up">Setting uplink frequency hopping...</string>
+    <string name="status_freq_hop_dn">Setting downlink frequency hopping...</string>
 </resources>
